@@ -48,7 +48,7 @@ a {
     color: #766357;
 }
 
-h1 {
+.main-title {
     font-size: 21px;
     line-height: 26px;
     text-align: center;
@@ -106,7 +106,7 @@ ol > li:nth-child(2) {
     background-color: #ffffff;
 }
 
-.search b {
+.search .text-secondary {
     font-size: 30px;
     line-height: 36px;
 }
