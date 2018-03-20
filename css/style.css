@@ -29,10 +29,6 @@ a {
 .main-header {
     margin: 0;
     padding: 0;
-    
-    /*  для сетки  */
-    min-height: 55px;
-    outline: 3px solid blue;
 }
 
 .main-header-logo {
@@ -60,17 +56,22 @@ a {
     padding: 0;
     list-style: none;
     
+    display: flex;
+    justify-content: center;
     background-color: #ffffff;
-    
-    /*  для сетки  */
-    outline: 3px solid #515591;
 }
 
 .main-navigation li {
     background-color: #ffffff;
-    
-    /*  для сетки  */
-    outline: 2px solid blue;
+    width: 25%;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    }
+
+
+.main-navigation li:nth-child(2) {
+    margin-right: 140px;
 }
 
 .main-navigation a {
@@ -474,3 +475,4 @@ a {
 .footer-social a {
    color: #ffffff;
 }
+
