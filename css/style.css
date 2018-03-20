@@ -37,7 +37,13 @@ a {
 
 .main-header-logo {
     position: absolute;
-    left: 640px;
+    width: 140px;
+    left: 50%;
+    margin-left: -70px;
+}
+
+.main-header-logo img {
+    width: 100%;
 }
 
 .main-navigation {
@@ -65,17 +71,6 @@ a {
     
     /*  для сетки  */
     outline: 2px solid blue;
-}
-
-.main-navigation li:first-child,
-.main-navigation li:nth-child(2) {
-    
-}
-
-
-.main-navigation li:nth-child(3),
-.main-navigation li:nth-child(4) {
-    
 }
 
 .main-navigation a {
@@ -141,7 +136,7 @@ a {
     font-size: 21px;
 }
 
-.features-item-blue {
+.features-item-detail {
     padding: 0;
     width: 100%;
     display: flex;
@@ -161,15 +156,13 @@ a {
 .features-picture-1 {
     padding: 0;
     width: 800px;
-    background-image: url(../img/place-1.jpg);
-    background-repeat: no-repeat;
+    background: url(../img/place-1.jpg) 0 0 no-repeat;
 }
 
 .features-picture-2 {
     padding: 0;
     width: 800px;
-    background-image: url(../img/place-2.jpg);
-    background-repeat: no-repeat;
+    background: url(../img/place-2.jpg) 0 0 no-repeat;
 }
 
 
@@ -322,8 +315,7 @@ a {
 .filter {
    padding: 30px 70px;
     
-   background-image: url(../img/filter-background.jpg);
-   background-repeat: no-repeat;
+   background: url(../img/filter-background.jpg) 0 0 no-repeat;
 }
 
 .filter form{
@@ -385,7 +377,6 @@ a {
    font-size: 12px;
    line-height: 18px;
     
-   background-color: : #ffffff;
 }
 
 .sorting b {
