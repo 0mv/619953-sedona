@@ -126,7 +126,7 @@ input[type="radio"].visually-hidden {
     width: 1200px;
     height: 510px;
     
-    background: blue url(../img/intro.jpg) 0 0 no-repeat;
+    background: #658eb4 url(../img/intro.jpg) 0 0 no-repeat;
 }
 
 .main-title {
