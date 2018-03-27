@@ -85,9 +85,10 @@ input[type="radio"].visually-hidden {
     margin-top: 15px;
     margin-bottom: 15px;
     padding: 0;
-    padding-left: 72px;
+    padding-left: 73px;
     
     text-align: left;
+    letter-spacing: .015em;
     
     background-color: #ffffff;
     }
@@ -99,7 +100,7 @@ input[type="radio"].visually-hidden {
 
 .main-navigation li:nth-child(n+3) {
     padding: 0;
-    padding-right: 75px;
+    padding-right: 73px;
     text-align: right;
 }
 
