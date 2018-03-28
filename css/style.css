@@ -699,10 +699,11 @@ input[type="radio"].visually-hidden {
 
 .price-controls label {
     display: inline-block;
+    padding-top: 9px;
+    vertical-align: top;
 
     font-size: 14px;
-    line-height: 38px;
-    vertical-align: top;
+    line-height: 1.15;
 }
 
 .price-controls .price-from,
