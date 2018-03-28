@@ -402,7 +402,13 @@ input[type="radio"].visually-hidden {
     position: relative;
 }
 
+.seach-form-showed {
+    display: block;
+}
+
 .search-form {
+/*    display: none;*/
+    
     width: 460px;
     padding: 55px;
     padding-top: 50px;
@@ -473,7 +479,7 @@ input[type="radio"].visually-hidden {
     text-transform: uppercase;
     
     background-color: #f2f2f2;
-    border: none;
+    border: 2px solid #e5e5e5;
 }
 
 .search-item input:hover {
@@ -483,7 +489,6 @@ input[type="radio"].visually-hidden {
 .search-item input:focus {
     background-color: #ffffff;
     border: 2px solid #e5e5e5;
-    outline: none;
 }
 
 .counter-container {
@@ -609,7 +614,7 @@ input[type="radio"].visually-hidden {
 
 .filter-option {
     margin-bottom: 25px;
-    padding-left: 42px;
+    padding-left: 40px;
 }
 
 .filter-option:last-child {
@@ -625,7 +630,7 @@ input[type="radio"].visually-hidden {
 .filter-input-checkbox:not(:checked) + label::before {
     content: "";
     position: absolute;
-    left: -42px;
+    left: -40px;
     top: 0;
 
     width: 23px;
@@ -638,14 +643,31 @@ input[type="radio"].visually-hidden {
     content: "";
 
     position: absolute;
-    left: -42px;
+    left: -40px;
     top: 0;
 
-    width: 23px;
+    width: 27px;
     height: 23px;
   
     background: url("../img/checkbox-on.svg")no-repeat;
 }
+
+.filter-input-checkbox:disabled + label::before {
+    background: url("../img/checkbox-off-disabled.svg")no-repeat;
+}
+
+.filter-input-checkbox:disabled + label::after {
+    background: url("../img/checkbox-on-disabled.svg")no-repeat;
+}
+
+.filter-option input:focus~label::after,
+.filter-input-checkbox:checked:focus + label::after,
+.filter-option input:focus~label::before,
+.filter-input-checkbox:checked:focus + label::before {
+    outline: 2px solid #0968d7;
+}
+
+
 
 .filter-input + label {
     color: #ffffff;
@@ -968,7 +990,7 @@ ul.sorting-type {
 .results-item .rating {
     margin-top: 70px;
     
-    padding: 5px 15px 3px;
+    padding: 4px 14px 3px 16px;
     
     position: relative;
     
@@ -982,15 +1004,16 @@ ul.sorting-type {
 .results-item span {
     display: inline-block;
     margin-bottom: 3px;
+    margin-right: 2px;
 }
 
 .results-item .rating::before {
     content: "";
     position: absolute;
     right: 0;
-    top: -65px;
+    top: -64px;
     
-    width: 93px;
+    width: 94px;
     height: 20px;
 
     background-image: url("../img/star.svg");
@@ -1002,7 +1025,7 @@ ul.sorting-type {
 }
 
 .results-item:nth-child(3) .rating::before {
-    width: 45px;
+    width: 46px;
 }
 
 .main-footer {
