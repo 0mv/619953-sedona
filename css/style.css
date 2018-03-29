@@ -138,7 +138,7 @@ input[type="radio"].visually-hidden {
 
 .main-title {
     margin-top: 58px;
-    margin-bottom: 29px;
+    margin-bottom: 27px;
     
     font-size: 21px;
     line-height: 26px;
@@ -185,7 +185,7 @@ input[type="radio"].visually-hidden {
 
 .features-item h3 {
     font-size: 21px;
-    padding: 0 60px 4px;
+    padding: 0 60px 3px;
     letter-spacing: .015em;
 }
 
@@ -217,13 +217,15 @@ input[type="radio"].visually-hidden {
     width: 800px;
     
     background: url(../img/place-1.jpg) 0 0 no-repeat;
+    background-size: 100% 100%;
 }
 
 .features-picture-2 {
     padding: 0;
     width: 800px;
     
-    background: url(../img/place-2.jpg) 0 0 no-repeat;
+    background: url(../img/place-2.jpg) 0 0 no-repeat;  
+    background-size: 100% 100%;
 }
 
 .advice {
@@ -244,7 +246,7 @@ input[type="radio"].visually-hidden {
     width: 300px;
     padding: 50px;
     padding-top: 161px;
-    padding-bottom: 69px;
+    padding-bottom: 68px;
     
     position: relative;
     
@@ -396,14 +398,18 @@ input[type="radio"].visually-hidden {
 
 .details-button,
 .booking-button {
-    padding: 4px 16px;
+    padding: 3px 16px 3px;
 }
 
-/*
 @keyframes pull {
-  
+    0% {
+        transform: translateY(-397px);
+    }
+    
+    100% {
+        transform: translateY(0px);
+    }
 }
-*/
 
 .search-form-container {
     margin: 0;
@@ -434,7 +440,7 @@ input[type="radio"].visually-hidden {
 
 .seach-form-showed {
     display: block;
-    animation: pull 0.6s;
+    animation: pull 0.8s;
     z-index: 3;
 }
 
@@ -464,7 +470,7 @@ input[type="radio"].visually-hidden {
 .search-item {
     margin: 0;
     margin-top: 2px;
-    margin-bottom: 28px;
+    margin-bottom: 27px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -484,7 +490,7 @@ input[type="radio"].visually-hidden {
     width: 345px;
     margin: 0;
     margin-top: 3px;
-    padding: 5px 4px 3px 8px;
+    padding: 4px 4px 4px 10px;
 
     
     font: inherit;
@@ -515,7 +521,7 @@ input[type="radio"].visually-hidden {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    margin-bottom: 25px;
+    margin-bottom: 27px;
 
 }
 
@@ -596,9 +602,10 @@ input[type="radio"].visually-hidden {
 }
 
 .filter {
-   padding: 27px 73px 31px;
+    padding: 27px 73px 31px;
     
-   background: url(../img/filter-background.jpg) 0 0 no-repeat;
+    background: url(../img/filter-background.jpg) 0 0 no-repeat;
+    background-size: 100%;
 }
 
 .filter h2 {
@@ -621,6 +628,10 @@ input[type="radio"].visually-hidden {
     border: none;
 }
 
+.filter fieldset:nth-child(2) {
+    margin-left: 4px;
+}
+
 .filter legend {
     margin-bottom: 25px;
     
@@ -640,7 +651,7 @@ input[type="radio"].visually-hidden {
 
 .filter-option {
     margin-bottom: 25px;
-    padding-left: 40px;
+    padding-left: 39px;
 }
 
 .filter-option:last-child {
@@ -956,8 +967,8 @@ ul.sorting-type {
 }
 
 .results-item {
-    padding: 24px 70px 23px 72px;
-    
+    padding: 23px 70px 23px 72px;
+        
     display: -webkit-box;
     
     display: -ms-flexbox;
@@ -971,9 +982,19 @@ ul.sorting-type {
     border: 1px solid #e5e5e5;
 }
 
+.results-item p {
+    margin: 0;
+    padding: 0;
+}
+
+.results-item img {
+    margin: 0;
+    padding: 0;
+}
+
 .results-description {
-    width: 750px;
-    margin-left: 30px;
+    width: 752px;
+    margin-left: 28px;
     margin-right: auto;
     padding: 0;
 }
@@ -986,13 +1007,13 @@ ul.sorting-type {
 
 .results-description a {
     margin: 0;
-    margin-right: 5px;
-    
+    margin-right: 4px;
 }
 
 .results-item h3 {
     margin: 0;
-    padding-bottom: 8px;
+    padding-bottom: 7px;
+    letter-spacing: .02em;
 }
 
 .results-item > p {
@@ -1018,7 +1039,7 @@ ul.sorting-type {
 }
 
 .results-item .rating {
-    margin-top: 70px;
+    margin-top: 67px;
     
     padding: 4px 14px 3px 16px;
     
@@ -1040,7 +1061,7 @@ ul.sorting-type {
 .results-item .rating::before {
     content: "";
     position: absolute;
-    right: 0;
+    right: 1px;
     top: -64px;
     
     width: 94px;
@@ -1087,14 +1108,14 @@ ul.sorting-type {
 }
 
 .footer-social {
-    width: 148px;
+    width: 151px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    margin-top: 4px;
+    margin-top: 3px;
     margin-left: 6px;
     text-align: center;
 }
@@ -1104,7 +1125,7 @@ ul.sorting-type {
 }
 
 .social-button {
-    width: 45px;
+    width: 46px;
     height: 47px;
     display: -webkit-box;
     display: -ms-flexbox;
