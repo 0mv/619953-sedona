@@ -19,7 +19,6 @@ a {
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
     position: absolute;
-
     width: 1px;
     height: 1px;
     margin: -1px;
@@ -266,7 +265,6 @@ input[type="radio"].visually-hidden {
 .advice-item:first-child::before {
     width: 75px;
     height: 72px;
-
     margin-left: -37px;
 
     background: url("../img/icon-1.svg") 0 0 no-repeat;
@@ -275,7 +273,6 @@ input[type="radio"].visually-hidden {
 .advice-item:nth-child(2)::before {
     width: 74px;
     height: 70px;
-
     margin-left: -37px;
 
     background: url("../img/icon-2.svg") 0 0 no-repeat;
@@ -284,7 +281,6 @@ input[type="radio"].visually-hidden {
 .advice-item:nth-child(3)::before {
     width: 64px;
     height: 76px;
-
     margin-left: -32px;
 
     background: url("../img/icon-3.svg") 0 0 no-repeat;
@@ -407,13 +403,27 @@ input[type="radio"].visually-hidden {
     padding: 3px 16px 3px;
 }
 
-@keyframes pull {
+@-webkit-keyframes pull {
     0% {
-        transform: translateY(-397px);
+        -webkit-transform: translateY(-397px);
+                transform: translateY(-397px);
     }
     
     100% {
-        transform: translateY(0px);
+        -webkit-transform: translateY(0px);
+                transform: translateY(0px);
+    }
+}
+
+@keyframes pull {
+    0% {
+        -webkit-transform: translateY(-397px);
+                transform: translateY(-397px);
+    }
+    
+    100% {
+        -webkit-transform: translateY(0px);
+                transform: translateY(0px);
     }
 }
 
@@ -450,8 +460,10 @@ input[type="radio"].visually-hidden {
 
 .seach-form-showed {
     display: block;
-    animation: pull 0.8s;
-    animation-timing-function: ease;
+    -webkit-animation: pull 0.8s;
+            animation: pull 0.8s;
+    -webkit-animation-timing-function: ease;
+            animation-timing-function: ease;
     z-index: 3;
 }
 
@@ -503,7 +515,6 @@ input[type="radio"].visually-hidden {
     margin-top: 3px;
     padding: 4px 4px 4px 10px;
 
-    
     font: inherit;
     line-height: 26px;
     font-weight: bold;
@@ -512,8 +523,6 @@ input[type="radio"].visually-hidden {
     background-color: #f2f2f2;
     border: 2px solid #f2f2f2;
 }
-
-
 
 .search-item input:hover {
     background-color: #ebebeb;
@@ -525,19 +534,19 @@ input[type="radio"].visually-hidden {
     border: 2px solid #e5e5e5;
 }
 
-.search-item input:-moz-placeholder {
-    color: #000000;
-}
-
-.search-item input::-moz-placeholder {
-    color: #000000;
-}
-
 .search-item input:-ms-input-placeholder {
     color: #000000;
 }
 
 .search-item input:-ms-input-placeholder {
+    color: #000000;
+}
+
+.search-item input::-webkit-input-placeholder {
+    color: #000000;
+}
+
+.search-item input::-ms-input-placeholder {
     color: #000000;
 }
 
@@ -553,7 +562,6 @@ input[type="radio"].visually-hidden {
         -ms-flex-pack: justify;
             justify-content: space-between;
     margin-bottom: 27px;
-
 }
 
 .counter-container .search-item {
@@ -563,7 +571,9 @@ input[type="radio"].visually-hidden {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    align-items: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
     padding-top: 0;
 }
 
@@ -575,6 +585,7 @@ input[type="radio"].visually-hidden {
     width: 186px;
     margin-left: 54px;
 }
+
 .counter {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -707,7 +718,6 @@ input[type="radio"].visually-hidden {
 
 .filter-input-checkbox:checked + label::after {
     content: "";
-
     position: absolute;
     left: -40px;
     top: -1px;
@@ -733,8 +743,6 @@ input[type="radio"].visually-hidden {
     outline: 2px solid #0968d7;
 }
 
-
-
 .filter-input + label {
     color: #ffffff;
     
@@ -758,12 +766,14 @@ input[type="radio"].visually-hidden {
 
 .price-controls {
     position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     
     height: 30px;
     margin-bottom: 20px;
     padding: 0;
-    padding-bottom: 2px;
+    padding-bottom: 3px;
 
     font-size: 0;
 
@@ -787,7 +797,6 @@ input[type="radio"].visually-hidden {
 }
 
 .price-controls label {
-    
     padding-top: 8px;
     
     vertical-align: top;
@@ -1066,7 +1075,6 @@ ul.sorting-type {
 
 .results-item .rating {
     margin-top: 67px;
-    
     padding: 4px 14px 3px 16px;
     
     position: relative;
@@ -1111,7 +1119,9 @@ ul.sorting-type {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     
     -webkit-box-align: center;
         -ms-flex-align: center;
@@ -1187,7 +1197,7 @@ ul.sorting-type {
 .logo-htmlacademy {
     width: 115px;
     height: 45px;
-    margin-left: 8px;
+    margin-left: 9px;
     margin-top: 5px;
 }
 
