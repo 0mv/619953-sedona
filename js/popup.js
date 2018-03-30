@@ -7,7 +7,12 @@ var checkin = popup.querySelector("[name=check-in]");
 button.addEventListener("click", function (evt) {
     evt.preventDefault();
     popup.classList.toggle("seach-form-showed");
-    checkin.focus();
+    
+    if (popup.classList.contains("seach-form-showed")) {
+        setTimeout(function() {
+            checkin.focus();
+        }, 900);
+    }
 });
 
 window.addEventListener("keydown", function (evt) {

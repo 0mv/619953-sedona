@@ -134,8 +134,10 @@ input[type="radio"].visually-hidden {
     width: 1200px;
     height: 510px;
     
-    background: #658eb4 url(../img/intro.jpg) 0 0 no-repeat;
-    background-size: 100%;
+    background-color: #658eb4;
+    background-image: url("../img/mask.png"), url("../img/intro.jpg");
+    background-position: 0 453px, 0 0;
+    background-repeat: no-repeat;
 }
 
 .main-title {
@@ -789,7 +791,7 @@ input[type="radio"].visually-hidden {
 
 .price-controls label {
     
-    padding-top: 10px;
+    padding-top: 8px;
     
     vertical-align: top;
 
@@ -1109,11 +1111,13 @@ ul.sorting-type {
 }
 
 .main-footer {
-    padding: 33px 95px 35px 133px;
+    margin: 0;
+    padding: 33px 95px 40px 133px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     justify-content: space-between;
+    
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -1130,7 +1134,7 @@ ul.sorting-type {
 
 .footer-hashtag {
     margin: 0;
-    margin-right: 25px;
+    margin-right: 28px;
     
     font-size: 21px;
     line-height: 26px;
@@ -1142,9 +1146,9 @@ ul.sorting-type {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    justify-content: space-between;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
-            justify-content: space-between;
     
     text-align: center;
 }
