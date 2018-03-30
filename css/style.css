@@ -219,7 +219,7 @@ input[type="radio"].visually-hidden {
     padding: 0;
     width: 800px;
     
-    background: url(../img/place-1.jpg) 0 0 no-repeat;
+    background: url("../img/place-1.jpg") 0 0 no-repeat;
     background-size: 100% 100%;
 }
 
@@ -227,7 +227,7 @@ input[type="radio"].visually-hidden {
     padding: 0;
     width: 800px;
     
-    background: url(../img/place-2.jpg) 0 0 no-repeat;  
+    background: url("../img/place-2.jpg") 0 0 no-repeat;  
     background-size: 100% 100%;
 }
 
@@ -525,7 +525,7 @@ input[type="radio"].visually-hidden {
     border: 2px solid #e5e5e5;
 }
 
-.search-item input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+.search-item input:-moz-placeholder {
     color: #000000;
 }
 
@@ -582,8 +582,6 @@ input[type="radio"].visually-hidden {
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
-
-    
 }
 
 .counter-container label {
@@ -635,7 +633,7 @@ input[type="radio"].visually-hidden {
 .filter {
     padding: 27px 73px 31px;
     
-    background: url(../img/filter-background.jpg) 0 0 no-repeat;
+    background: url("../img/filter-background.jpg") 0 0 no-repeat;
     background-size: 100%;
 }
 
@@ -745,7 +743,6 @@ input[type="radio"].visually-hidden {
 
 .filter-range {
     width: 317px;
-    
     margin-left: 237px;
 
     color: #ffffff;
@@ -815,8 +812,6 @@ input[type="radio"].visually-hidden {
     background: none;
     border: none;
 }
-
-
 
 .range-controls {
     position: relative;
