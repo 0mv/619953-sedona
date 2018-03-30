@@ -514,6 +514,26 @@ input[type="radio"].visually-hidden {
     border: 2px solid #e5e5e5;
 }
 
+.search-item input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color: #000000;
+}
+
+.search-item input::-moz-placeholder {
+    color: #000000;
+}
+
+.search-item input:-ms-input-placeholder {
+    color: #000000;
+}
+
+.search-item input:-ms-input-placeholder {
+    color: #000000;
+}
+
+.search-item input::placeholder {
+    color: #000000;
+}
+
 .counter-container {
     display: -webkit-box;
     display: -ms-flexbox;
