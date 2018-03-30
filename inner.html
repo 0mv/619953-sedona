@@ -26,7 +26,7 @@
                 <h1 class="visually-hidden">Поиск жилья</h1>
                 <section class="filter">
                     <h2 class="visually-hidden">Фильтр жилья</h2>
-                    <form method="get" action="https://echo.htmlacademy.ru" id="filter-form">
+                    <form method="get" action="https://echo.htmlacademy.ru" id="filter">
                         <fieldset>
                             <legend>Инфраструктура:</legend>
                             <ul>
@@ -77,7 +77,7 @@
                                 <div class="range-toggle range-toggle-from" tabindex="0"></div>
                                 <div class="range-toggle range-toggle-to" tabindex="0"></div>
                             </div>
-                            <a class="button" onclick="document.getElementByld('filter-form').submit(); return false;" href="search-result.html" target="_blank">Показать</a>
+                            <a class="button" onclick="document.getElementById('filter').submit(); return false;" href="search-result.html" target="_blank">Показать</a>
                         </div>
                     </form>
                 </section>
