@@ -128,6 +128,8 @@ input[type="radio"].visually-hidden {
 .main-title {
     margin-top: 58px;
     margin-bottom: 27px;
+    margin-left: 378px;
+    margin-right: 380px;
     font-size: 21px;
     line-height: 26px;
     text-align: center;
@@ -868,21 +870,21 @@ ul.sorting-type {
             justify-content: space-between;
 }
 
-.sorting .active {
+.sorting-type .active {
     color: #81b3d2;
 }
 
-.sorting a {
+.sorting-type a{
     color: #cacaca;
     border-bottom: 1px dotted #81b3d2;
 }
 
-.sorting a:hover {
+.sorting-type a:hover {
     color: #81b3d2;
     border-bottom: 1px dotted #81b3d2;
 }
 
-.sorting a:active{
+.sorting-type a:active{
     color: #000000;
     border-bottom: none;
 }
