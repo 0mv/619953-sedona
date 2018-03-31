@@ -232,29 +232,25 @@ input[type="radio"].visually-hidden {
 .advice-item::before{
     content: "";
     position: absolute;
-    bottom: 200px;
-    left: 50%;
+    width: 75px;
+    height: 76px;
+    top: 56px;
+    left: 160px;
 }
 
 .advice-item:first-child::before {
-    width: 75px;
-    height: 72px;
-    margin-left: -37px;
-    background: url("../img/icon-1.svg") 0 0 no-repeat;
+    background: url("../img/icon-1.svg") center bottom no-repeat;
+    background-size: 75px 72px;
 }
 
 .advice-item:nth-child(2)::before {
-    width: 74px;
-    height: 70px;
-    margin-left: -37px;
-    background: url("../img/icon-2.svg") 0 0 no-repeat;
+    background: url("../img/icon-2.svg") center bottom no-repeat;
+    background-size: 74px 70px;
 }
 
 .advice-item:nth-child(3)::before {
-    width: 64px;
-    height: 76px;
-    margin-left: -32px;
-    background: url("../img/icon-3.svg") 0 0 no-repeat;
+    background: url("../img/icon-3.svg") center bottom no-repeat;
+    background-size: 64px 76px;
 }
 
 .advice-title {
