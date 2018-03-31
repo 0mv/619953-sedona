@@ -218,7 +218,7 @@ input[type="radio"].visually-hidden {
     padding: 0;
     width: 800px;
     
-    background: url("../img/place-1.jpg") 0 0 no-repeat;
+    background: #cd9781 url("../img/place-1.jpg") 0 0 no-repeat;
     background-size: 100% 100%;
 }
 
@@ -226,7 +226,7 @@ input[type="radio"].visually-hidden {
     padding: 0;
     width: 800px;
     
-    background: url("../img/place-2.jpg") 0 0 no-repeat;  
+    background: #cd9781 url("../img/place-2.jpg") 0 0 no-repeat;  
     background-size: 100% 100%;
 }
 
@@ -644,7 +644,7 @@ input[type="radio"].visually-hidden {
 .filter {
     padding: 27px 73px 31px;
     
-    background: url("../img/filter-background.jpg") 0 0 no-repeat;
+    background: #658eb4 url("../img/filter-background.jpg") 0 0 no-repeat;
     background-size: 100%;
 }
 
@@ -1057,19 +1057,19 @@ ul.sorting-type {
     padding-top: 7px;
 }
 
-.results-item h3 a {
+.results-item-name a {
     font-size: 21px;
     line-height: 26px;
     font-weight: bold;
     color: #000000;
 }
 
-.results-item h3 a:hover,
-.results-item h3 a:focus {
+.results-item-name a:hover,
+.results-item-name a:focus {
     color: #81b3d2;
 }
 
-.results-item h3 a:active {
+.results-item-name a:active {
     color: #b2b2b2;
 }
 
