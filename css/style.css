@@ -126,13 +126,11 @@ input[type="radio"].visually-hidden {
 }
 
 .main-title {
-    margin-top: 58px;
-    margin-bottom: 27px;
-    margin-left: 378px;
-    margin-right: 380px;
     font-size: 21px;
     line-height: 26px;
     text-align: center;
+    margin: 58px auto 27px;
+    width: 465px;
 }
 
 .features h2 {
