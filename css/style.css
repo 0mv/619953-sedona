@@ -126,11 +126,13 @@ input[type="radio"].visually-hidden {
 }
 
 .main-title {
+    margin-top: 58px;
+    margin-bottom: 27px;
+    margin-left: 378px;
+    margin-right: 380px;
     font-size: 21px;
     line-height: 26px;
     text-align: center;
-    margin: 58px auto 27px;
-    width: 465px;
 }
 
 .features h2 {
@@ -292,8 +294,9 @@ input[type="radio"].visually-hidden {
 }
 
 .open-close-button {
+    box-sizing: border-box;
     width: 568px;
-    padding: 29px 135px 31px;
+    padding: 30px 135px;
     position: relative;
     z-index: 4;
     font-size: 21px;
